@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sussy-web
+  labels:
+    app: sussy-web
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: sussy-web
+  template:
+    metadata:
+      labels:
+        app: sussy-web
+    spec:
+      containers:
+      - name: sussy-web
+        image: docker.io/k4it0z11/sussy-web:latest
+      restartPolicy: Always

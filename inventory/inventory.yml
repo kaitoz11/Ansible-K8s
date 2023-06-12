@@ -1,0 +1,22 @@
+all:
+  children:
+    master:
+      hosts:
+        192.168.1.12:
+          ansible_user: k4it0z11
+          ansible_password: admin
+          ansible_become_password: admin
+    worker:
+      hosts:
+        192.168.1.13:
+          ansible_user: k4it0z11
+          ansible_password: admin
+          ansible_become_password: admin
+        192.168.1.16:
+          ansible_user: k4it0z11
+          ansible_password: admin
+          ansible_become_password: admin
+        192.168.1.14:
+          ansible_user: k4it0z11
+          ansible_password: admin
+          ansible_become_password: admin
